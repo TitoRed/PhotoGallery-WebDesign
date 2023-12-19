@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TitoRedking Website</title>
+
+    <!-- Importación Hoja Estilo CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
+    <!-- Agrega la importación de la biblioteca de iconos de Google -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<header>
+    <a href="index.html"><img class="title" src="assets/img/logo.png"></a>
+    <button id="expand-btn" onclick="toggleFullScreen()">
+        <i class="material-icons">fullscreen</i>
+    </button>
+</header>
+<nav>
+    <!-- Utiliza iconos en lugar de texto para los enlaces en versiones móviles -->
+    <li class="nav-item active"><a href="index.html"><i class="material-icons">photo</i><span class="nav-text">Gallery</span></a></li>
+    <li class="nav-item"><a href="categories.html"><i class="material-icons">dashboard</i><span class="nav-text">Categories</span></a></li>
+    <li class="nav-item"><a href="upload.html"><i class="material-icons">add</i><span class="nav-text">Upload</span></a></li>
+    <li class="nav-item"><a href="favorite.php"><i class="material-icons">favorite</i><span class="nav-text">Favorites</span></a></li>
+    <li class="nav-item"><a href="account.php"><i class="material-icons">account_circle</i><span class="nav-text">Account</span></a></li>
+</nav>
+ <div class="row">
+    <!-- Columna 1--> 
+    <div class="column">
+        <div class="image-container">
+            <img class="img-post" src="https://images.unsplash.com/photo-1699594165148-0eb85ec79666?q=80&w=2091&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            <div class="text-container">
+                <div class="usuario-container">
+                    <div class="usuario">@Titorey</div>
+
+                </div>
+            </div>
+            <div class="heart">
+                <button onclick="toggleHeart(this)">
+                    <i class="material-icons">favorite</i>
+                </button>
+                <div class="explosion"></div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img class="img-post" src="https://images.unsplash.com/photo-1699593144658-9a0e48655112?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            <div class="text-container">
+                <div class="usuario-container">
+                    <div class="usuario">@Titorey</div>
+
+                </div>
+            </div>
+            <div class="heart">
+                <button onclick="toggleHeart(this)">
+                    <i class="material-icons">favorite</i>
+                </button>
+                <div class="explosion"></div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img class="img-post" src="https://images.unsplash.com/photo-1699632476744-629936a55309?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            <div class="text-container">
+                <div class="usuario-container">
+                    <div class="usuario">@Titorey</div>
+                </div>
+            </div>
+            <div class="heart">
+                <button onclick="toggleHeart(this)">
+                    <i class="material-icons">favorite</i>
+                </button>
+                <div class="explosion"></div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img class="img-post" src="https://cdn.pixabay.com/photo/2023/09/14/15/54/bird-8253245_1280.jpg">
+            <div class="text-container">
+                <div class="usuario-container">
+                    <div class="usuario">@Titorey</div>
+
+                </div>
+            </div>
+            <div class="heart">
+                <button onclick="toggleHeart(this)">
+                    <i class="material-icons">favorite</i>
+                </button>
+                <div class="explosion"></div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img class="img-post" src="https://cdn.pixabay.com/photo/2023/12/13/03/19/mountains-8446221_1280.jpg">
+            <div class="text-container">
+                <div class="usuario-container">
+                    <div class="usuario">@Titorey</div>
+
+                </div>
+            </div>
+            <div class="heart">
+                <button onclick="toggleHeart(this)">
+                    <i class="material-icons">favorite</i>
+                </button>
+                <div class="explosion"></div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="https://cdn.pixabay.com/photo/2023/08/19/08/26/house-8200038_1280.jpg">
+            <div class="text-container">
+                <div class="usuario-container">
+                    <div class="usuario">@Titorey</div>
+
+                </div>
+            </div>
+            <div class="heart">
+                <button onclick="toggleHeart(this)">
+                    <i class="material-icons">favorite</i>
+                </button>
+                <div class="explosion"></div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="https://cdn.pixabay.com/photo/2023/12/04/15/12/soap-8429699_1280.jpg">
+            <div class="text-container">
+                <div class="usuario-container">
+                    <div class="usuario">@Titorey</div>
+
+                </div>
+            </div>
+            <div class="heart">
+                <button onclick="toggleHeart(this)">
+                    <i class="material-icons">favorite</i>
+                </button>
+                <div class="explosion"></div>
+            </div>
+        </div>
+    </div>   
+    <!-- Columna 2--> 
+    <div class="column">
+        <div class="image-container">
+            <img class="img-post" src="https://images.unsplash.com/photo-1699581695824-dc0496d5353f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            <div class="text-container">
+                <div class="usuario-container">
+                    <div class="usuario">@Titorey</div>
+                </div>
+            </div>
+            <div class="heart">
+                <button onclick="toggleHeart(this)">
+                    <i class="material-icons">favorite</i>
+                </button>
+                <div class="explosion"></div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img class="img-post" src="https://images.unsplash.com/photo-1698725223016-03479bfd52e4?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            <div class="text-container">
+                <div class="usuario-container">
+                    <div class="usuario">@Titorey</div>
+                </div>
+            </div>
+            <div class="heart">
+                <button onclick="toggleHeart(this)">
+                    <i class="material-icons">favorite</i>
+                </button>
+                <div class="explosion"></div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img class="img-post" src="https://plus.unsplash.com/premium_photo-1674420732043-d00b956e00b3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            <div class="text-container">
+                <div class="usuario-container">
+                    <div class="usuario">@Titorey</div>
+                </div>
+            </div>
+            <div class="heart">
+                <button onclick="toggleHeart(this)">
+                    <i class="material-icons">favorite</i>
+                </button>
+                <div class="explosion"></div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img class="img-post" src="https://cdn.pixabay.com/photo/2023/11/05/13/19/christmas-8367102_1280.jpg">
+            <div class="text-container">
+                <div class="usuario-container">
+                    <div class="usuario">@Titorey</div>
+                </div>
+            </div>
+            <div class="heart">
+                <button onclick="toggleHeart(this)">
+                    <i class="material-icons">favorite</i>
+                </button>
+                <div class="explosion"></div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img class="img-post" src="https://cdn.pixabay.com/photo/2023/04/22/10/28/sheep-7943526_1280.jpg">
+            <div class="text-container">
+                <div class="usuario-container">
+                    <div class="usuario">@Titorey</div>
+                </div>
+            </div>
+            <div class="heart">
+                <button onclick="toggleHeart(this)">
+                    <i class="material-icons">favorite</i>
+                </button>
+                <div class="explosion"></div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img class="img-post" src="https://cdn.pixabay.com/photo/2023/10/29/11/33/cow-8349729_1280.png">
+            <div class="text-container">
+                <div class="usuario-container">
+                    <div class="usuario">@Titorey</div>
+                </div>
+            </div>
+            <div class="heart">
+                <button onclick="toggleHeart(this)">
+                    <i class="material-icons">favorite</i>
+                </button>
+                <div class="explosion"></div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img class="img-post" src="https://cdn.pixabay.com/photo/2023/12/13/03/19/mountains-8446221_1280.jpg">
+            <div class="text-container">
+                <div class="usuario-container">
+                    <div class="usuario">@Titorey</div>
+                </div>
+            </div>
+            <div class="heart">
+                <button onclick="toggleHeart(this)">
+                    <i class="material-icons">favorite</i>
+                </button>
+                <div class="explosion"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Columna 3--> 
+    <div class="column">
+        <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1586999082807-3e0bc859ab73?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            <div class="text-container">
+                <div class="usuario-container">
+                    <div class="usuario">@Titorey</div>
+                </div>
+            </div>
+            <div class="heart">
+                <button onclick="toggleHeart(this)">
+                    <i class="material-icons">favorite</i>
+                </button>
+                <div class="explosion"></div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1699536813782-54998ebe0578?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            <div class="text-container">
+                <div class="usuario-container">
+                    <div class="usuario">@Titorey</div>
+                </div>
+            </div>
+            <div class="heart">
+                <button onclick="toggleHeart(this)">
+                    <i class="material-icons">favorite</i>
+                </button>
+                <div class="explosion"></div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="https://images.pexels.com/photos/8218375/pexels-photo-8218375.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+            <div class="text-container">
+                <div class="usuario-container">
+                    <div class="usuario">@Titorey</div>
+                </div>
+            </div>
+            <div class="heart">
+                <button onclick="toggleHeart(this)">
+                    <i class="material-icons">favorite</i>
+                </button>
+                <div class="explosion"></div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="https://cdn.pixabay.com/photo/2023/12/05/16/57/dog-8432098_1280.jpg">
+            <div class="text-container">
+                <div class="usuario-container">
+                    <div class="usuario">@Titorey</div>
+                </div>
+            </div>
+            <div class="heart">
+                <button onclick="toggleHeart(this)">
+                    <i class="material-icons">favorite</i>
+                </button>
+                <div class="explosion"></div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="https://cdn.pixabay.com/photo/2023/11/10/02/30/woman-8378634_1280.jpg">
+            <div class="text-container">
+                <div class="usuario-container">
+                    <div class="usuario">@Titorey</div>
+                </div>
+            </div>
+            <div class="heart">
+                <button onclick="toggleHeart(this)">
+                    <i class="material-icons">favorite</i>
+                </button>
+                <div class="explosion"></div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="https://cdn.pixabay.com/photo/2023/12/18/12/04/ai-generated-8455898_1280.jpg">
+            <div class="text-container">
+                <div class="usuario-container">
+                    <div class="usuario">@Titorey</div>
+                </div>
+            </div>
+            <div class="heart">
+                <button onclick="toggleHeart(this)">
+                    <i class="material-icons">favorite</i>
+                </button>
+                <div class="explosion"></div>
+            </div>
+        </div>
+    </div>  
+</body>
+</html>

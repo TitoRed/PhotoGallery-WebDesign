@@ -1,0 +1,346 @@
+body {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #13223D ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    background-color:  #13223D;
+    color: #fff;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    margin-bottom: 5px;
+    position: relative; /* Añadido para posicionar el botón de ampliar */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    float: center;
+}
+
+nav {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: #3a3838;
+    padding: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+nav li {
+    display: inline;
+    margin-right: 25px;
+    /* Aumenta el espacio entre elementos de la barra de navegación */
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    /* Color del texto del enlace */
+}
+
+.title {
+    text-decoration: none;
+    width: 250px;
+    text-align: center; /* Centra el texto dentro del contenedor */
+    margin-left: auto;  /* Establece el margen izquierdo a automático */
+    margin-right: auto; /* Establece el margen derecho a automático */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 850px;
+    margin-top: 20px;
+    text-align: center;
+    position: center;
+}
+
+.menu {
+    margin-top: 20px;
+    font-weight: 750;
+    color: white;
+}
+
+.column {
+    flex: 0 0 calc(33.33% - 7px);
+    max-width: calc(33.33% - 7px);
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 13px;
+    /* Espacio entre imágenes */
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: filter 0.5s ease;
+    margin-top: 25.05px;
+    /* Espacio entre imágenes */
+}
+
+.text-container {
+    position: absolute;
+    top: 0;
+    /* Cambiado de 'bottom' a 'top' */
+    left: 0;
+    width: 100%;
+    padding: 1px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 1);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+    border: 2px solid #ddd;
+    z-index: 1;
+}
+
+.usuario-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Centra verticalmente el contenido */
+}
+
+.usuario {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+    font-weight: 640;
+    margin-right: 10px;
+    align-self: center;
+    /* Agregado para centrar en el eje vertical */
+    margin-bottom: 1.5px;
+}
+
+.heart {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opa city 1s ease;
+    z-index: 2;
+}
+
+.explosion {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation: explode 1s forwards;
+    /* Ajusta la duración de la animación de explosión */
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.heart button {
+    background: none;
+    border: none;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+    transform-origin: center center;
+    transition: opacity 0.4s ease;
+}
+
+.heart button i {
+    font-size: 46px;
+    color: white;
+    opacity: 0.8;
+    transition: transform 0.5s ease;
+}
+
+.image-container:hover .heart {
+    opacity: 1;
+}
+
+.heart button.active i {
+    color: red;
+    transform: scale(1.5);
+}
+
+
+.heart button.active i.active {
+    color: red;
+}
+
+
+/* MEDIDAS MÓVIL */
+@media (max-width: 450px) {
+
+    #expand-btn {
+        position: absolute;
+        top: 50%;
+        right: 10px; /* Alinea el botón a la derecha */
+        transform: translateY(-50%);
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: #fff;
+    }
+
+    #expand-btn:hover {
+        color: #3498db; /* Cambia el color al pasar el mouse sobre el botón */
+    }
+
+
+    .image-container {
+        margin-bottom: 0px;
+    }
+
+
+    .text-container {
+        border-radius: 0px;
+    }
+
+    .material-icons {
+        font-size: 40px;
+    }
+
+    img {
+        border-radius: 0px;
+        margin-top: 0px;
+    }
+
+    .img-post {
+        border-radius: 0;
+        margin-top: 27px;
+    }
+
+    .title {
+        text-align: left;
+        float: left;
+        width: 200px;
+        margin-bottom: 7px;
+        margin-left: 3px;
+    }
+
+    .column {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .row .column {
+        margin-bottom: 0px; /* Ajusta la separación entre los iconos */
+        margin-top: -5px;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+        margin-top: -10px;
+        justify-content: center; /* Centra los iconos horizontalmente */
+    }
+
+    nav {        
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        text-align: center;
+        bottom: 0;
+        width: 100%;
+        z-index: 999;
+        background-color: #13223D;
+        padding: 18px;
+        line-height: 1.7; /* Puedes ajustar este valor según sea necesario */    
+    }
+
+    body {
+        margin-bottom: 72px;
+
+    }
+
+
+    nav a {
+        text-decoration: none;
+        color: #B8B9BA;
+    }
+
+    nav li {
+        margin: 0 7%; /* Ajusta el espacio entre los elementos li según sea necesario */
+
+    }
+
+    nav li.active a {
+        color: #3498db; 
+    }
+
+    nav a i.material-icons {
+        font-size: 27px; /* Ajusta el tamaño del ícono según sea necesario */
+    }
+
+    .nav-text {
+        display: none;
+    }
+
+}
+
+/* MEDIDAS MÓVIL (GALAXY FOLD) */
+
+@media (max-width: 320px) {
+    nav li {
+        margin: 0 5.8%; /* Ajusta el espacio entre los elementos li según sea necesario */
+
+    }
+}
+
+/* Estilos para versiones de pantalla más grandes (PC) */
+@media (min-width: 451px) {
+    nav .nav-text {
+        display: inline-block; /* Muestra el texto en versiones de pantalla más grandes (PC) */
+    }
+
+    nav .material-icons {
+        display: none; /* Oculta los iconos en versiones de pantalla más grandes (PC) */
+    }
+
+    #expand-btn {
+        display: none;
+    }
+
+}
+
+@keyframes explode {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
